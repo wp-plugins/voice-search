@@ -1,4 +1,4 @@
-/*! Voice Search - v1.2.0
+/*! Voice Search - v1.2.1
  * https://spinpress.com/wordpress-web-speech-api/
  * Copyright (c) 2015; * Licensed GPLv2+ */
 (function () {
@@ -8,7 +8,7 @@
 		return;
 	}
 
-	var patience = 6;
+	var patience = 3;
 
 	// Capitalize a string
 	function capitalize(str) {
@@ -42,6 +42,14 @@
 		}
 
 		speechInputWrapper.classList.add('voice-search-wrapper');
+
+		// Pressing enter should submit the search, not press the voice search button
+		speechInputWrapper.addEventListener('keypress', function (e) {
+			if (e.keyCode && e.keyCode === 13) {
+				speechInputWrapper.submit();
+				return false;
+			}
+		}, false);
 
 		// Add some markup to the search form
 

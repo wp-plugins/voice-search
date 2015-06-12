@@ -4,7 +4,7 @@ Donate link:       https://pascalbirchler.com
 Tags:              voice, search, speech, api,  
 Requires at least: 2.6  
 Tested up to:      4.2  
-Stable tag:        1.2.0  
+Stable tag:        1.2.1  
 License:           GPLv2 or later  
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -48,6 +48,11 @@ In my tests there weren’t any problems with other plugins like Relevanssi.
 
 == Changelog ==
 
+= 1.2.1 =
+
+* Less patience for quicker feedback after speech input
+* Pressing enter now submits the form instead of triggering the microphone button
+
 = 1.2.0 =
 * Improve compatibility with themes that initially hide the search forms
 * Update browser support info in the readme
@@ -63,6 +68,9 @@ In my tests there weren’t any problems with other plugins like Relevanssi.
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Pressing enter now submits the form instead of triggering the microphone button. Also, quicker feedback thanks to less patience. 
 
 = 1.2.0 =
 Some themes have really bad search forms. But don’t worry no more! This plugins supports themes like Divi too!
